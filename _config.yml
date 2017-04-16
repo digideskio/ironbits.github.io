@@ -1,7 +1,7 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Ialle Ironbits
+description: Blog
 
-url: http://brianmaierjr.github.com/long-haul
+url: ironbits.github.io
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -14,15 +14,14 @@ paginate: 5
 navigation:
  - title: Home
    url: /index.html
- - title: About
+ - title: Sobre Mim
    url: /about
- - title: Contact
+ - title: Contato
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: ironbits
+   twitter: unixbr
+   email: ialle.ironbits@gmail.com
 
-google_analytics: "UA-58263416-1"
+google_analytics: "xxxxxxxxxxxxxx"
