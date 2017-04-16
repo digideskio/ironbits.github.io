@@ -1,55 +1,104 @@
 ---
 layout: post
-title:  "Example Post Formatting"
+title:  "V3n0M-Scanner — Popular SQLi and Pentesting scanner in Python"
 date:   2014-12-15
 ---
 
-<p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+<p class="intro"><span class="dropcap">C</span>V3n0M is a free and open source scanner. Evolved from baltazar’s scanner, it has adapted several new features that improve fuctionality and usability. It is mostly experimental software.</p>
 
-# Heading 1
+![img](https://cdn-images-1.medium.com/max/800/1*Lm18IbqbsX4n2jIjNoltOw.png)
 
-## Heading 2
+<blockquote>This program is for finding and executing various vulnerabilities. It scavenges the web using dorks and organizes the URLs it finds. **Use at your own risk.**
 
-### Heading 3
+## Very useful for executing:
 
-#### Heading 4
+* Metasploit Modules Scans
+* SQL Injection Vuln Scanner[SQLi]
+* Extremely Large D0rk Target Lists
+* FTP Crawler
+* DNS BruteForcer
+* Python3 Asyncio based scanning
 
-##### Heading 5
+## What You Hold:
 
-###### Heading 6
+**The official adoption of darkd0rker heavily recoded, updated, expanded and improved upon**
 
-<blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
+- Brand new, just outta the box!
+- Largest and most powerful d0rker online, 18k+d0rks searched over ~ Engines at once.
+- Free and Open /src/
+- CrossPlatform Python based toolkit
+- Version 4.0.4c Released on 11th April 2016
+- Licensed under GPLv2
+- Tested on: ArchLinux 4.4.6–1, Ubuntu, Debian, Windows, MacOS
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+## Module Deps
 
-## Unordered List
-* List Item
-* Longer List Item
-  * Nested List Item
-  * Nested Item
-* List Item
+- Install pip3 if you don’t have it already: **sudo apt-get install python3-pip**
+- Then install these modules with pip3: **sudo pip3 install dnspython3 aiohttp httplib2 socksipy-branch requests url**
+- Now cd into src and run v3n0m.py
 
-## Ordered List
-1. List Item
-2. Longer List Item
-    1. Nested OL Item
-    2. Another Nested Item
-3. List Item
+## Usage:
 
-## Definition List
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl>
+```
+root@bt:~# python3 v3n0m.py
+```
 
-Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+```
+Now you may follow the simple prompts.
+```
 
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+```
+[0x100] Choose your target (domain) :
+        Example : .com
+        AND
+        it is necessary to add you can also use a specific website (www.example.com)
+```
 
-Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
+```
+[0x200] Choose the number of random dorks (0 for all.. may take awhile!) :
+        Example : 0 = This will choose all of the XSS, File Inclusion, RCE and SQLi dorks
+```
 
-Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+```
+[0x300] Choose the number of threads :
+        Example : 50
+```
 
-Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+```
+[0x400] Enter the number of pages to search through :
+        Example : 50
+    The program will print out your desired settings and start searching.
+    It then creates files for the collected and valid URLs for later.
+    It takes a while to scan because it utilizes either TOR, which you can specify
+    if you wish to do so, or regular HTTP requests over a long period of time.
+    After a while, it will feed you the percentage of the scan until completion.
+    At this point, it will have saved the valid URLs in the files it created earlier.
+    The program utilizes over 10k dorks now, be careful how you use them!
+    Enjoy. :]
+                                                            ~/ Dev Team
+```
+
+## Contact Information:
+
+```
+[ NovaCygni ] - <novacygni@hotmail.co.uk>
+[ Architect ] - <t3h4rch1t3ct@riseup.net>
+```
+
+## Original Header:
+
+```
+- This was written for educational purpose and pentest only. Use it at your own risk.
+- Author will be not responsible for any damage!
+- !!! Special greetz for my friend sinner_01 !!!
+- Toolname        : darkd0rk3r.py
+- Coder           : baltazar a.k.a b4ltazar <b4ltazar@gmail.com>
+- Version         : 1.0
+- greetz for all members of ex darkc0de.com, ljuska.org
+```
+
+## Old Unsupported Version of 3.4 V3n0M in Python 2 can still be installed via PIP.
+
+- PyPi: “NOT CURRENTLY MAINTAINED, PIP VERSION IS OUTDATED!!!!” “ ‘Bug’ reports for the Python2 3.4 Version WILL be ignored!” You can now install the software via pip install V3n0m Always verify the PGP signature of the package: gpg: Signature made Fri 18 Jul 2014 02:59:48 AM UTC gpg: using RSA key 0x8F2B5CBD711F1326 gpg: Good signature from “Grand Architect [unload@cryptolab.net](mailto:unload@cryptolab.net)”
+
+**Source: **[**https://github.com/ironbits/V3n0M-Scanner**
